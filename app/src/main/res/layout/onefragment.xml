@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.stx.xhb.xbanner.XBanner
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/Xbanner"></com.stx.xhb.xbanner.XBanner>
+            <TextView
+                android:id="@+id/check_Rxxp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="热销新品"
+                android:textSize="26sp"
+                android:textColor="#f9b028"
+                android:gravity="center"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_rxxp">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/check_Mlss"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="魔力时尚"
+                android:textSize="26sp"
+                android:textColor="#6c36f5"
+                android:gravity="center"
+              />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_mlss">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/check_Pzsh"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="品质生活"
+                android:textSize="26sp"
+                android:textColor="#f00"
+                android:gravity="center"
+              />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_pzsh">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
